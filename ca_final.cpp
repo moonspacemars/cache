@@ -114,25 +114,25 @@ int main(int argc, char *argv[]){
 
 
 
-cout<<addressBits<<endl;
+/*cout<<addressBits<<endl;
 cout<<numSet<<endl;
 cout<<associate<<endl;
-cout<<blockSize<<endl;
+cout<<blockSize<<endl;*/
 
 /*
 for (int x=0; x<refGroup.size(); x++){
     cout<<refGroup[x]<<endl;
 }*/
 
-cout<<outputPath<<endl;
+//cout<<outputPath<<endl;
 
 idxBitCount=log2(numSet);
 
 offsetBitCount=log2(blockSize);
 
-cout<<"idx"<<idxBitCount<<endl;
+//cout<<"idx"<<idxBitCount<<endl;
 
-cout<<"off"<<offsetBitCount<<endl;
+//cout<<"off"<<offsetBitCount<<endl;
 vector<vector<UnitCell>> setGroup;
 setGroup.resize(numSet);
 /*
