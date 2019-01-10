@@ -238,10 +238,15 @@ for (int x=0; x<hitGroup.size(); x++){
         answerOutput<<"Offset bit count: "<<offsetBitCount<<endl;
         answerOutput<<endl;    
 
+        string tmpstr;
         int missCount=0;
         for (int i=0; i<refGroup.size(); i++){
-            answerOutput<<refGroup[i];
+            
+            
+            
             if (i>0 && i<refGroup.size()-1){
+                tmpstr=tmpstr.assign(refGroup[i],0, refGroup[i].size()-1);            
+                answerOutput<<tmpstr;
                 if (hitGroup[i])
                     answerOutput<<" hit";
                 else{
@@ -249,6 +254,8 @@ for (int x=0; x<hitGroup.size(); x++){
                     missCount++;
                 }
             }
+            else
+                answerOutput<<refGroup[i];
             answerOutput<<endl;
         }
 
